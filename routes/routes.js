@@ -7,8 +7,8 @@ const router = express.Router();
 
 router.get('/hi', getHi);
 router.get('/', getHi);
-router.get('/todos',todoController.gettodos);
-router.get('/todoadd',todoController.gettodoadd);
+router.get('/todo',todoController.gettodos);
+router.get('/todo/add/:var',todoController.gettodoadd);
 
 
 export default router;

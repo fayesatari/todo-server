@@ -1,20 +1,21 @@
 
-let count =0;
+let data =[];
 
 const gettodos=(req,res)=>{
     
     res.status(200).json(
         {
             'message':'hi from todos',
-            'count': count
+            'data': data
         });
 }
 
 const gettodoadd=(req,res)=>{
-    count++;
+    data.push(req.params.var);
     res.status(200).json(
         {
-            'message':'hi from todoadd'
+            'message':'hi from todoadd',
+            'new item': req.params.var
         });
 }
 
