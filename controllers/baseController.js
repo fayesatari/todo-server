@@ -1,6 +1,6 @@
 export const getHi=(req,res)=>{
     console.log("start hi");
-    res.send('Hi');
+    res.status(201).json({ message:'Hitttttttt', status:200});
 
 }
 
